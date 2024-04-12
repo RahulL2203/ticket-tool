@@ -1,0 +1,99 @@
+.container{
+    max-width: 1400px;
+    margin:auto;
+   
+}
+.roww{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: whitesmoke;
+   
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    position: relative;
+    z-index: 99;
+    padding: 15px;
+    box-shadow: -2px 2px 30px -25px rgba(249, 249, 249, 0.942);
+    
+}
+.header .logo-items{
+    display:flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.header .item-left{
+
+    flex:0 0 20%;
+}
+
+.header .item-center{
+  
+    flex:0 0 55%;
+}
+.header .item-right{
+   
+    flex:0 0 25%;
+    
+}
+.header .menu > ul >li {
+    display:inline-block;
+    line-height: 50px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    
+}
+.header .menu > ul >li .sub-menu{
+    position: absolute;
+    /* z-index: 500;  */
+    background-color: #ddfddc;
+    box-shadow: -2px 2px 70px -25px rgba(0, 0,0,0.3);
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    margin-top: 25px;
+    visibility: hidden;
+    opacity: 0;
+    
+   
+}
+.header .menu > ul >li.menu-items-has-children:hover .sub-menu{
+    visibility: visible;
+    margin-top: 0;
+    opacity: 1;
+    border-radius: 0  0 5px 5px;
+}
+
+
+header .menu > ul >li .sub-menu >ul> li{
+    line-height: 2;
+    transition: color 0.3s ease;
+}
+header .menu > ul >li .sub-menu >ul> li:hover
+{
+color:#ea4636;
+visibility: visible;
+}
+
+.header .menu > ul >li .single-column-menu
+{
+    max-width: 350px;
+    min-width: 190px;
+    
+}
+
+.header .right-items{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:2px;
+    padding: 2px;
+}
